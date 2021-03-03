@@ -1,0 +1,54 @@
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <h2>Diagram</h2>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+@section scripts {
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['Work', 11],
+                ['Eat', 2],
+                ['Commute', 2],
+                ['Watch TV', 2],
+                ['Sleep', 7]
+            ]);
+
+            var options = {
+                title: 'My Daily Activities'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+}

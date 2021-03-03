@@ -1,0 +1,67 @@
+﻿@model DataLayer.Unit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Unit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Countable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Countable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Symbol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Symbol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitGroup)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitGroup)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UnitID }, new { @class = "btn btn-sm btn-warning" }) |
+    @Html.ActionLink("Back to List", "Index", "Units", new { @class = "btn btn-sm btn-primary" })
+
+</p>
