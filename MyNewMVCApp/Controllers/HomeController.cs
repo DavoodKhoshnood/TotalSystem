@@ -27,10 +27,5 @@ namespace IdentitySample.Controllers
             return View();
         }
 
-        public ActionResult Charts()
-        {
-            return PartialView();
-        }
-
     }
 }

@@ -1998,6 +1998,8 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ChartsController.cs" />
+    <Compile Include="Controllers\GoodsController.cs" />
+    <Compile Include="Controllers\GoodsGroupsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RolesAdminController.cs" />
@@ -2017,7 +2019,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Home\Charts.cshtml" />
     <Content Include="Views\Stores\Index.cshtml" />
     <Content Include="Views\Stores\Edit.cshtml" />
     <Content Include="Views\Units\Index.cshtml" />
@@ -2035,6 +2036,16 @@
     <Content Include="Views\Charts\Index.cshtml" />
     <Content Include="Views\Units\Delete.cshtml" />
     <Content Include="Views\Units\Create.cshtml" />
+    <Content Include="Views\GoodsGroups\Create.cshtml" />
+    <Content Include="Views\GoodsGroups\Delete.cshtml" />
+    <Content Include="Views\GoodsGroups\Details.cshtml" />
+    <Content Include="Views\GoodsGroups\Edit.cshtml" />
+    <Content Include="Views\GoodsGroups\Index.cshtml" />
+    <Content Include="Views\Goods\Create.cshtml" />
+    <Content Include="Views\Goods\Delete.cshtml" />
+    <Content Include="Views\Goods\Details.cshtml" />
+    <Content Include="Views\Goods\Edit.cshtml" />
+    <Content Include="Views\Goods\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

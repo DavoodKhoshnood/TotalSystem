@@ -12,9 +12,8 @@ namespace DataLayer
     {
         [Key]
         public int GroupID { get; set; }
-        public int ParentID { get; set; }
         [Required]
-        [MaxLength(300)]
+        [MaxLength(300)][Display(Name ="Group Title")]
         public string Title { get; set; }
         [MaxLength(500)]
         [DataType(DataType.MultilineText)]

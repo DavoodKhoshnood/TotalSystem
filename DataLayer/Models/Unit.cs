@@ -13,7 +13,7 @@ namespace DataLayer
         public int UnitID { get; set; }
 
         [Required]
-        [MaxLength(200)]
+        [MaxLength(200)][Display(Name ="Unit Title")]
         public string Title { get; set; }
 
         public bool Countable { get; set; }

@@ -80,6 +80,14 @@
     <Compile Include="Migrations\202102181948380_AddNewColUnit.designer.cs">
       <DependentUpon>202102181948380_AddNewColUnit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202103030118376_DelParrentId_GoodsGroup.cs" />
+    <Compile Include="Migrations\202103030118376_DelParrentId_GoodsGroup.designer.cs">
+      <DependentUpon>202103030118376_DelParrentId_GoodsGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202103030205117_DelStoreIdFromGoods.cs" />
+    <Compile Include="Migrations\202103030205117_DelStoreIdFromGoods.designer.cs">
+      <DependentUpon>202103030205117_DelStoreIdFromGoods.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Good.cs" />
     <Compile Include="Models\GoodsGroup.cs" />
@@ -90,6 +98,8 @@
     <Compile Include="Repositories\IGoodsRepository.cs" />
     <Compile Include="Repositories\IStoreRepository.cs" />
     <Compile Include="Repositories\IUnitRepository.cs" />
+    <Compile Include="Services\GoodsGroupRepository.cs" />
+    <Compile Include="Services\GoodsRepository.cs" />
     <Compile Include="Services\StoreRepository.cs" />
     <Compile Include="Services\UnitRepository.cs" />
   </ItemGroup>
@@ -119,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202102181948380_AddNewColUnit.resx">
       <DependentUpon>202102181948380_AddNewColUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103030118376_DelParrentId_GoodsGroup.resx">
+      <DependentUpon>202103030118376_DelParrentId_GoodsGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202103030205117_DelStoreIdFromGoods.resx">
+      <DependentUpon>202103030205117_DelStoreIdFromGoods.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

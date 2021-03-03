@@ -15,9 +15,6 @@ namespace DataLayer
         [Required]
         public int GroupID { get; set; }
 
-        [Required]
-        public int StoreID { get; set; }
-
         [Required][MaxLength(300)]
         public string Title { get; set; }
 
@@ -38,8 +35,7 @@ namespace DataLayer
         //Navigation Property
         public virtual GoodsGroup GoodsGroup { get; set; }
         public virtual Unit Unit { get; set; }
-        public virtual Store Store { get; set; }
-
+  
         public Good()
         {
 
